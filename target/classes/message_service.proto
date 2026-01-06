@@ -1,0 +1,62 @@
+syntax = "proto3";
+
+option java_multiple_files = true;
+option java_package = "com.distributed.grpc";
+
+package messageservice;
+
+service MemberService {
+    rpc Register(RegisterRequest) returns (RegisterResponse);
+    rpc Unregister(UnregisterRequest) returns (UnregisterResponse);
+    rpc StoreMessage(StoreMessageRequest) returns (StoreMessageResponse);
+    rpc RetrieveMessage(RetrieveMessageRequest) returns (RetrieveMessageResponse);
+    rpc Heartbeat(HeartbeatRequest) returns (HeartbeatResponse);
+}
+
+message RegisterRequest {
+    string member_id = 1;
+    string host = 2;
+    int32 port = 3;
+}
+
+message RegisterResponse {
+    bool success = 1;
+    string message = 2;
+}
+
+message UnregisterRequest {
+    string member_id = 1;
+}
+
+message UnregisterResponse {
+    bool success = 1;
+}
+
+message StoreMessageRequest {
+    string message_id = 1;
+    string message_content = 2;
+}
+
+message StoreMessageResponse {
+    bool success = 1;
+    string error_message = 2;
+}
+
+message RetrieveMessageRequest {
+    string message_id = 1;
+}
+
+message RetrieveMessageResponse {
+    bool found = 1;
+    string message_content = 2;
+    string error_message = 3;
+}
+
+message HeartbeatRequest {
+    int64 timestamp = 1;
+}
+
+message HeartbeatResponse {
+    bool alive = 1;
+    int64 timestamp = 2;
+}
