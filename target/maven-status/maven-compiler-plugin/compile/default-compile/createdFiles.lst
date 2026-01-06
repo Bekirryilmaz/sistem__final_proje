@@ -1,0 +1,13 @@
+com\distributed\grpc\MemberServiceGrpc$MemberServiceBlockingStub.class
+com\distributed\grpc\MemberServiceGrpc$MemberServiceMethodDescriptorSupplier.class
+com\distributed\grpc\MemberServiceGrpc$MethodHandlers.class
+com\distributed\grpc\MemberServiceGrpc$AsyncService.class
+com\distributed\grpc\MemberServiceGrpc$MemberServiceImplBase.class
+com\distributed\grpc\MemberServiceGrpc$1.class
+com\distributed\grpc\MemberServiceGrpc$MemberServiceFutureStub.class
+com\distributed\grpc\MemberServiceGrpc$2.class
+com\distributed\grpc\MemberServiceGrpc$MemberServiceBaseDescriptorSupplier.class
+com\distributed\grpc\MemberServiceGrpc$MemberServiceStub.class
+com\distributed\grpc\MemberServiceGrpc.class
+com\distributed\grpc\MemberServiceGrpc$MemberServiceFileDescriptorSupplier.class
+com\distributed\grpc\MemberServiceGrpc$3.class
