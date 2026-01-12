@@ -1,5 +1,10 @@
 package com.distributed.client;
 
+/**
+ * Client modülü - Ebubekir Yılmaz
+ * Dağıtık mesajlaşma sistemi istemci uygulaması
+ */
+
 import com.distributed.common.ProtocolConstants;
 
 import java.io.BufferedReader;
